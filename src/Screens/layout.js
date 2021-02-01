@@ -9,7 +9,7 @@ class Layout extends React.Component {
       <div className="app">
         <Header title = {'DEMO Streaming'} />
         {this.props.children}
-        {/* <Footer /> */}
+        <Footer />
       </div>
     );
   }

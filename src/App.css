@@ -113,41 +113,80 @@
 
 .footer-container {
   width: 100%;
-  height: 260px;
+  position: fixed;
+  bottom: 0;
   background-color: #26272b;
-  display: flex;
-}
-
-.footer-inner-container {
-  display: flex;
-  flex-direction: column;
-  margin-left: 60px;
-}
-
-.footer-links {
-  color:  #737373;
+  align-items: flex-start;
 }
 
 .footer-links a {
-  display:inline-block;
-	line-height: 1.8;
-	text-decoration: none;
-  color:  inherit;
-  padding: 15px;
+  color: #ffffff;
+  padding: 20px;
 }
 
-.pages-name {
-  font-size: 16px;
-  color: #737373;
-  font-weight: bold;
+.copyright-text {
+  color: #ffffff;
+  margin-left: 18px;
 }
 
-.footer-copyright {
-  margin-left: 15px;
+.social-login {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10px;
+  margin-top: 30px;
 }
 
-.footer-copyright-title {
-  color: #737373;
-  line-height: 1.8;
-	text-decoration: none;
+.social-login-cont {
+  display: flex;
+  flex-direction: row;
+  padding-right: 10px;
+  align-items: center;
 }
+
+.social-login-cont div {
+  display: flex;
+  padding: 10px;
+}
+
+.footer-inner-container {
+  padding: 20px;
+}
+
+/* media query */
+
+@media (min-width:320px) and (max-width:961px)  { 
+  /* smartphones, iPhone, portrait 480x320 phones */ 
+  .footer-inner-container {
+    padding: 0px;
+  }
+
+  .copyright-text {
+    margin-left: 0px;
+  }
+
+  .footer-links a {
+    padding: 0px;
+  }
+
+  .body-container {
+    width: 100%;
+  }
+  
+  .body-wrapper {
+    width: 100%;
+    height: 50%;
+  }
+
+  .selection-box-container {
+    height: 100%;
+  }
+  
+  
+}
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }

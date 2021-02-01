@@ -1,5 +1,6 @@
 import React from 'react';
 import '../app.css';
+import { FbIcon, InstaIcon, TwitterIcon, AppleStoreIcon, PlayStoreIcon, WindowStoreIcon } from "../Util/icon"
 export default function Footer({}) {
     return(
         <div className = "footer-container" >
@@ -18,17 +19,32 @@ export default function Footer({}) {
                 |
                 <a href="#">Manage Account</a>
               </p>
-              <div className = "footer-copyright">
-                <p class="footer-copyright-title">Copyright &copy; 2017 All Rights Reserved by 
-                </p>
+            </div> 
+            <div className = "copyright-text">
+              <p>CopyRight</p>
+            </div> 
+            <div className = "social-login">
+              <div className = "social-login-cont">
+                <div>
+                  <FbIcon color = {'#fff'} />
+                </div>
+                <div>
+                  <InstaIcon color = {'#fff'} />
+                </div>
+                <div>
+                  <TwitterIcon color = {'#fff'} />
+                </div>
               </div>
-            </div>
-            <div className = "footer-social-container">
-              <div className = "social-login">
-
-              </div>
-              <div className = "social-download">
-
+              <div className = "social-login-cont">
+                <div>
+                  <AppleStoreIcon color = {'#fff'} />
+                </div>
+                <div>
+                  <PlayStoreIcon color = {'#fff'} />
+                </div>
+                <div>
+                  <WindowStoreIcon color = {'#fff'} />
+                </div>
               </div>
             </div>
           </div>
